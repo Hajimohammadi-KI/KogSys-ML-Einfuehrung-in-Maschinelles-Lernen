@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools >= 80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = [".gitignore", "dev.ipynb"]
+
+[project]
+name = "KogSysMLP"
+version = "0.1"
+authors = [
+  { name="Johannes Langer", email="johannes.langer@uni-bamberg.de" },
+  { name="Marius Lang", email="marius.lang@stud.uni-bamberg.de" }
+]
+description = "Simple framework for constructing MLPs as basis for a course assignment."
+readme = ""
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "GPL-3.0"
